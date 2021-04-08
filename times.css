@@ -1,0 +1,142 @@
+ul {
+  list-style: none;
+}
+
+.navBar {
+  width: 100%;
+}
+
+.navList {
+  display: grid;
+  padding: 5px 20px 5px 20px;
+  margin: 0;
+  grid-auto-flow: column;
+  grid-template-columns: 25px 25px auto 1fr auto auto;
+  grid-gap: 10px;
+  border-bottom: 1px solid lightgrey;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.navList > li > strong:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  margin: auto;
+}
+
+.navList > li > strong:hover,
+.logo:hover,  button:hover,
+.navList > li > img:hover {
+  cursor: pointer;
+}
+
+.border {
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.border:hover {
+  background-color: lightgrey;
+}
+
+ button {
+   background-color: #567b95;
+   color: white;
+   border: 1px solid #326891;
+   border-radius: 3px;
+   padding: 11px 12px 8px 12px;
+   font-size: 11px;
+   font-weight: 700;
+ }
+ button:hover {
+   background-color: #326891;
+ }
+
+ .handles {
+   display: grid;
+   grid-auto-flow: column;
+   grid-column-start: 3;
+ }
+
+ .main {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 10% 1fr 50% 1fr 10%;
+   padding-top: 50px;
+   overflow: hidden;
+   grid-row-gap: 30px;
+ }
+
+  h1, section, .signUp  {
+    grid-column-start: 3;
+  }
+
+  .figure1, figcaption {
+    grid-column: 2 / -2;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .inflation {
+    grid-column: 2 /-2;
+    margin: 0 auto;
+  }
+
+  .inflation > div {
+    display: grid;
+    grid-template-columns: repeat(4, 236px);
+    grid-template-rows: auto auto 330px 380px auto;
+    align-items: center;
+  }
+
+  .figImage {
+    width: 940px;
+    height: 700px;
+  }
+
+  .inflation > div > h2, .inflation > div > p,
+  .figure {
+  grid-column: 1 /-1;
+  }
+
+  .figure {
+    grid-row: 3 / 5;
+  }
+
+  .o , .tw , .t , .fo {
+    grid-row: 3/4;
+  }
+
+  .f , .si , .s , .e {
+    grid-row: 4/5;
+  }
+
+  .o , .f {
+    grid-column: 1/2;
+  }
+
+  .tw , .si{
+    grid-column: 2/3;
+  }
+
+  .t , .s {
+    grid-column: 3/4;
+  }
+
+  .fo , .e{
+    grid-column: 4/5;
+  }
+
+  .o , .tw , .t , .fo , .f , .si , .s , .e  {
+    align-self: end;
+  }
